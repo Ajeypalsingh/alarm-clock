@@ -1,16 +1,84 @@
 @import url("./reset.css");
 
 
+.container{
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+  }
+  
+
+
 body {
     background-color: rgb(9, 9, 33);
-    display: grid;
-    place-content: center;
+}
+
+main {
+   display: grid;
+   place-content: center;
     height: 100vh;
 }
 
-.clock span {
+
+.clock {
     color: #fff;
-    font-size: 60px;
+    font-size: 75px;
+    font-weight: 500;
+}
+
+
+.output {
+    display: flex;
+    place-items: center;
+    height: 30px;
+    width: 110px;
+    margin-top: 10px;
+}
+
+.output img {
+    height: 22px;
+}
+
+h4 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.set-alarm {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.set-alarm input {
+    height: 35px;
+    width: 130px;
+    border-radius: 20px;
+    font-size: 17px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid rgb(184, 177, 177);
+}
+
+input + input {
+    margin-left: 10px;
+}
+
+input[type=text] {
+    background-color: rgb(61, 55, 55);
+    color: #f2f2f2;
+}
+
+input[type=button] {
+    background-color: #3b3bff;
+    color: #f2f2f2;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=button]:hover {
+    background-color: #1e1ed9;
+    color: #f2f2f2;
 }
 
 

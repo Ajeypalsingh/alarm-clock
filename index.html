@@ -18,13 +18,16 @@
     <script src="./assets/script/index.js" defer></script>
   </head>
   <body>
-      <div class="clock">
-        <span id="hrs">00</span>
-        <span>:</span>
-        <span id="minutes">00</span>
-        <span>:</span>
-        <span id="seconds">00</span>
-      </div> 
-      <input type="text" class="set-alarm">
+    <main>
+      <div class="clock"></div>
+      <div class="output container">
+        <img src="./assets/images/alarm.png"> 
+         <h4>00:00</h4>
+      </div>
+      <div class="set-alarm container">
+        <input type="text" id="alarmTime" placeholder="00:00">
+        <input type="button" class="start-alarm" value="Set Alarm">
+      </div>
+    </main>
   </body>
 </html>
